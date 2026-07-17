@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 康橋藍 / 康橋紫 — Internal Prototype palette */
+  --kc-blue: #1b4f9c;
+  --kc-blue-deep: #0e2f66;
+  --kc-blue-soft: #4f7ec8;
+  --kc-purple: #6b3d9a;
+  --kc-purple-deep: #4a256e;
+  --kc-purple-soft: #8f6bb8;
+  --kc-mist: #f4f1fa;
+  --kc-ink: #1a1d2e;
+  --kc-muted: #5c6478;
+  --kc-line: rgba(27, 79, 156, 0.12);
+  --kc-glow: rgba(107, 61, 154, 0.18);
+  --background: var(--kc-mist);
+  --foreground: var(--kc-ink);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-body), var(--font-display), "Noto Sans TC", system-ui, sans-serif;
+  font-feature-settings: "kern" 1;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-body), "Nunito", system-ui, sans-serif;
+  font-synthesis: none;
+}
+
+.kc-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+.kc-decor {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(900px 480px at 8% -10%, rgba(27, 79, 156, 0.18), transparent 60%),
+    radial-gradient(700px 420px at 100% 0%, rgba(107, 61, 154, 0.16), transparent 55%),
+    radial-gradient(600px 400px at 50% 100%, rgba(79, 126, 200, 0.1), transparent 50%),
+    linear-gradient(180deg, #f7f5fc 0%, #eef2fb 45%, #f6f3fa 100%);
+}
+
+.kc-decor::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(27, 79, 156, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), transparent 75%);
+}
+
+.kc-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(8px);
+  opacity: 0.55;
+}
+
+.kc-card {
+  @apply rounded-2xl border bg-white/85 backdrop-blur-md shadow-sm;
+  border-color: var(--kc-line);
+  box-shadow: 0 10px 30px rgba(14, 47, 102, 0.06);
+}
+
+.kc-card-selected {
+  border-color: rgba(107, 61, 154, 0.45);
+  box-shadow:
+    0 0 0 2px rgba(107, 61, 154, 0.18),
+    0 12px 28px rgba(27, 79, 156, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 241, 250, 0.95));
+}
+
+.kc-btn-primary {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-white transition;
+  background: linear-gradient(120deg, var(--kc-blue) 0%, var(--kc-purple) 100%);
+  box-shadow: 0 8px 20px rgba(27, 79, 156, 0.22);
+}
+
+.kc-btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.kc-btn-primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  filter: none;
+  transform: none;
+}
+
+.kc-btn-hero {
+  @apply inline-flex items-center justify-center rounded-full px-10 py-4 text-lg font-extrabold text-white transition sm:px-14 sm:py-5 sm:text-xl;
+  background: linear-gradient(120deg, var(--kc-blue) 0%, var(--kc-purple) 100%);
+  box-shadow: 0 14px 36px rgba(27, 79, 156, 0.28);
+  letter-spacing: 0.04em;
+  min-width: min(100%, 16rem);
+}
+
+.kc-btn-hero:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.kc-btn-hero:active {
+  transform: translateY(1px);
+}
+
+.kc-hero {
+  background:
+    radial-gradient(520px 280px at 15% 20%, rgba(79, 126, 200, 0.22), transparent 60%),
+    radial-gradient(480px 260px at 90% 10%, rgba(143, 107, 184, 0.2), transparent 55%),
+    linear-gradient(160deg, #ffffff 0%, #f3effa 48%, #eaf0fb 100%);
+}
+
+.kc-hero-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: -20%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(27, 79, 156, 0.08),
+    rgba(107, 61, 154, 0.1),
+    rgba(79, 126, 200, 0.06),
+    rgba(27, 79, 156, 0.08)
+  );
+  opacity: 0.55;
+  filter: blur(40px);
+}
+
+.kc-hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(2px);
+  opacity: 0.5;
+}
+
+.kc-hero-orb-a {
+  width: 90px;
+  height: 90px;
+  top: 18%;
+  right: 12%;
+  background: radial-gradient(circle, rgba(143, 107, 184, 0.45), transparent 70%);
+}
+
+.kc-hero-orb-b {
+  width: 70px;
+  height: 70px;
+  bottom: 16%;
+  left: 10%;
+  background: radial-gradient(circle, rgba(79, 126, 200, 0.4), transparent 70%);
+}
+
+.kc-btn-ghost {
+  @apply inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-medium transition;
+  border-color: var(--kc-line);
+  color: var(--kc-blue-deep);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.kc-btn-ghost:hover {
+  border-color: rgba(107, 61, 154, 0.35);
+  background: white;
+}
+
+.kc-chip {
+  @apply rounded-full border px-3 py-1.5 text-sm transition;
+  border-color: var(--kc-line);
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--kc-ink);
+}
+
+.kc-chip-active {
+  border-color: transparent;
+  color: white;
+  background: linear-gradient(120deg, var(--kc-blue-soft), var(--kc-purple));
+}
+
+.kc-choice .kc-sparkles {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.kc-sparkle,
+.kc-diamond {
+  position: absolute;
+  font-size: 11px;
+  line-height: 1;
+  color: rgba(107, 61, 154, 0.35);
+}
+
+.kc-sparkle-a {
+  top: 10px;
+  right: 14px;
+  color: rgba(27, 79, 156, 0.4);
+}
+
+.kc-sparkle-b {
+  bottom: 12px;
+  left: 14px;
+  color: rgba(143, 107, 184, 0.45);
+}
+
+.kc-diamond {
+  top: 12px;
+  left: 16px;
+  font-size: 10px;
+  color: rgba(79, 126, 200, 0.4);
+}
+
+.kc-core-card {
+  border-color: rgba(107, 61, 154, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(107, 61, 154, 0.12),
+    0 14px 32px rgba(27, 79, 156, 0.1);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.98), rgba(244, 241, 250, 0.96));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .kc-sparkle-a {
+    animation: kc-twinkle 2.8s ease-in-out infinite;
+  }
+  .kc-sparkle-b {
+    animation: kc-twinkle 3.4s ease-in-out infinite 0.6s;
+  }
+  .kc-diamond {
+    animation: kc-twinkle 3s ease-in-out infinite 1s;
+  }
+}
+
+@keyframes kc-twinkle {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.15);
+  }
+}
+
+.kc-progress-track {
+  @apply h-1.5 w-full overflow-hidden rounded-full;
+  background: rgba(27, 79, 156, 0.1);
+}
+
+.kc-progress-bar {
+  @apply h-full rounded-full;
+  background: linear-gradient(90deg, var(--kc-blue), var(--kc-purple));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,9 @@
+version: 0.1.0
+rules:
+- Respect robots.txt when robotsRequired is true; if robots fetch fails, skip domain.
+- No login, no CAPTCHA bypass, no multi-account.
+- Store raw HTML only under data/raw/ (gitignored).
+- Processed outputs keep summaries + metadata, not full page dumps in curated/.
+- Do not invent officialUrl or pricing; mark unknown.
+- PII must not be collected.
+- Rate limit with defaultDelaySeconds between requests.

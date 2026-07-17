@@ -1,0 +1,196 @@
+version: 0.1.0
+userAgent: 'KangChiaoAINavigatorBot/0.1 (+internal-prototype; research; contact: local-dev)'
+defaultDelaySeconds: 1.5
+timeoutSeconds: 20
+maxBytesPerPage: 2000000
+domains:
+- domain: gemini.google.com
+  toolIds:
+  - gemini
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: chatgpt.com
+  toolIds:
+  - chatgpt
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.magicschool.ai
+  toolIds:
+  - magicschool
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.edcafe.ai
+  toolIds:
+  - edcafe
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: math-gpt.org
+  toolIds:
+  - mathgpt
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.vidnoz.com
+  toolIds:
+  - vidnoz
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: openai.com
+  toolIds:
+  - sora
+  paths:
+  - /sora
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: openai.com
+  toolIds:
+  - codex
+  paths:
+  - /codex/
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.canva.com
+  toolIds:
+  - canva
+  paths:
+  - /
+  - /education/
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: soundraw.io
+  toolIds:
+  - soundraw
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: ecrettmusic.com
+  toolIds:
+  - ecrettmusic
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: notebooklm.google.com
+  toolIds:
+  - notebooklm
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: padlet.com
+  toolIds:
+  - padlet
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: curipod.com
+  toolIds:
+  - curipod
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.classpoint.io
+  toolIds:
+  - classpoint
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: seesaw.me
+  toolIds:
+  - seesaw
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: sites.google.com
+  toolIds:
+  - google_sites
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.apple.com
+  toolIds:
+  - freeform
+  paths:
+  - /freeform/
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: stellarium.org
+  toolIds:
+  - stellarium
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.brainingcamp.com
+  toolIds:
+  - brainingcamp
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.hyread.com.tw
+  toolIds:
+  - hyread
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: cursor.com
+  toolIds:
+  - cursor
+  paths:
+  - /
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+- domain: www.anthropic.com
+  toolIds:
+  - claude_code
+  paths:
+  - /claude-code
+  robotsRequired: true
+  purpose: official_landing
+  licenseNote: reference_only
+excludedSources:
+- name: reddit
+  reason: Data API Terms restrict ML/AI training on user content without approval
+- name: private_forums
+  reason: login walls / personal data risk

@@ -1,0 +1,4 @@
+{"id": "uc_hs_teacher_research_001", "role": "teacher", "level": "high", "task": "research", "language": "zh-TW", "freeOnly": true, "need_zh": "把三篇補充教材整理成課堂問答", "need_en": "Turn three readings into class Q&A", "expectedTopIds": ["notebooklm", "gemini"]}
+{"id": "uc_elem_teacher_poster_001", "role": "teacher", "level": "elementary", "task": "poster", "language": "zh-TW", "freeOnly": true, "need_zh": "做一張班級活動海報", "need_en": "Make a class event poster", "expectedTopIds": ["canva"]}
+{"id": "uc_uni_student_coding_001", "role": "student", "level": "university", "task": "coding", "language": "en", "freeOnly": false, "need_zh": "完成程式專題除錯", "need_en": "Debug a coding project", "expectedTopIds": ["cursor", "chatgpt", "codex"]}
+{"id": "uc_middle_music_001", "role": "teacher", "level": "middle", "task": "music", "language": "en", "freeOnly": true, "need_zh": "幫短影片找免版稅配樂", "need_en": "Find royalty-aware music for a short video", "expectedTopIds": ["soundraw", "ecrettmusic"]}

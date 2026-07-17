@@ -1,0 +1,57 @@
+{
+  "tasks": [
+    "admin_draft",
+    "brainstorm",
+    "coding",
+    "collaboration",
+    "feedback",
+    "fun_learn",
+    "homework_help",
+    "image",
+    "language_practice",
+    "lesson_plan",
+    "music",
+    "portfolio",
+    "poster",
+    "presentation",
+    "quiz",
+    "reading",
+    "research",
+    "simulation",
+    "sound",
+    "study_notes",
+    "summary",
+    "translate",
+    "tutoring",
+    "video",
+    "web_project",
+    "worksheet",
+    "writing"
+  ],
+  "categories": [
+    "devtools",
+    "generative_text",
+    "media_music",
+    "reading_research",
+    "subject_specialized",
+    "voice_assist",
+    "whiteboard_collab"
+  ],
+  "roles": [
+    "teacher",
+    "student"
+  ],
+  "levels": [
+    "elementary",
+    "middle",
+    "high",
+    "university"
+  ],
+  "difficultyStars": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

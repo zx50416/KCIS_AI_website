@@ -1,0 +1,58 @@
+{
+  "need": {
+    "role": "teacher",
+    "level": "high",
+    "task": "research",
+    "language": "zh-TW",
+    "freeOnly": true
+  },
+  "top3": [
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "score": 16,
+      "reasons": [
+        "free_ok",
+        "task_match",
+        "role_match",
+        "level_match",
+        "language_match",
+        "research_boost"
+      ],
+      "difficultyStars": 2,
+      "freeStatus": "freemium",
+      "officialUrl": "https://notebooklm.google.com/"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "score": 14,
+      "reasons": [
+        "free_ok",
+        "task_match",
+        "role_match",
+        "level_match",
+        "language_match"
+      ],
+      "difficultyStars": 2,
+      "freeStatus": "freemium",
+      "officialUrl": "https://gemini.google.com/"
+    },
+    {
+      "id": "hyread",
+      "name": "HyRead",
+      "score": 13,
+      "reasons": [
+        "free_unknown",
+        "task_match",
+        "role_match",
+        "level_match",
+        "language_match",
+        "research_boost"
+      ],
+      "difficultyStars": 2,
+      "freeStatus": "unknown",
+      "officialUrl": "https://www.hyread.com.tw/"
+    }
+  ]
+}
