@@ -2,9 +2,11 @@
 
 依身分與需求，快速找到合適的 AI／數位工具，並產生可複製的提示詞。
 
-## 線上使用
+## 線上網站（可分享）
 
-部署後請以 Vercel 提供的網址分享（見 GitHub Actions／Vercel 專案頁）。
+**https://zx50416.github.io/-AI-/**
+
+（由 GitHub Pages 自動部署；推送 `main` 後約 1–3 分鐘更新）
 
 ## 本機執行
 
@@ -22,5 +24,5 @@ npm run dev
 
 ## 部署備註
 
-- Vercel **Root Directory** 請設為 `web`
-- 建置指令：`npm run build`（在 `web` 目錄）
+- 公開站：GitHub Actions → GitHub Pages（`web/` 靜態匯出，`GITHUB_PAGES=true` 時使用 `basePath: /-AI-`）
+- 若改接 Vercel：Root Directory 設 `web`，且**不要**設 `GITHUB_PAGES=true`（即可無 basePath）
