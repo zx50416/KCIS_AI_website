@@ -29,6 +29,14 @@ export function SiteHeader({ onRestart }: { onRestart?: () => void }) {
             {t.nav.restart}
           </button>
         ) : null}
+        <a
+          href="https://zx50416.github.io/WikiNB-KCIS/"
+          target="_blank"
+          rel="noreferrer"
+          className="kc-btn-wikinb"
+        >
+          {t.nav.wikiNb}
+        </a>
         <button type="button" className="kc-btn-ghost" onClick={toggleLocale}>
           {t.nav.language}
         </button>
