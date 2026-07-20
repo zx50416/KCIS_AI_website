@@ -31,6 +31,9 @@
     "stars": "顆星",
     "starsHint": "星星愈多＝這個 AI 工具愈需要花時間學",
     "coreBadge": "核心推薦",
+    "lowRelevanceBadge": "相關性較低",
+    "lowRelevanceHint": "這個工具較難直接對應你剛選的任務，建議優先考慮前面幾個選項。",
+    "lowRelevanceNote": "標示「相關性較低」的項目是為湊滿 6 個推薦，未必最適合這次需求。",
     "easyLearn": "很好學",
     "otherHint": "用一句話說你想做什麼（會寫進提示詞；推薦仍依身分與單位）"
   },

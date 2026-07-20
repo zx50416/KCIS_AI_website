@@ -242,6 +242,51 @@ export function isCoreCapable(tool: Tool, need: UserNeed, reasons: string[]): bo
   return false;
 }
 
+/** Whether scoring reasons show a real fit for the chosen task (not just role/level). */
+export function isTaskRelevant(reasons: string[], rawTask: string | null): boolean {
+  if (reasons.includes("task_match") || reasons.includes("core_partner")) return true;
+  if (!rawTask || rawTask === "other") {
+    return reasons.some((r) =>
+      ["task_match", "core_partner", "admin_office_fit", "research_boost"].includes(r),
+    );
+  }
+
+  const boostByTask: Record<string, string[]> = {
+    video: ["video_boost", "media_boost"],
+    image: ["image_boost", "media_boost"],
+    music: ["media_boost"],
+    sound: ["media_boost"],
+    coding: ["devtools_boost"],
+    web_project: ["devtools_boost"],
+    simulation: ["specialized_boost"],
+    interest_explore: ["specialized_boost"],
+  };
+  const boosts = boostByTask[rawTask] ?? [];
+  return reasons.some((r) => boosts.includes(r));
+}
+
+export function markLowRelevance(items: RankedTool[], need: UserNeed): RankedTool[] {
+  if (items.length === 0) return items;
+  const topScore = items[0].score;
+
+  return items.map((item) => {
+    if (item.pinnedCore) return { ...item, lowRelevance: false };
+
+    const taskFit = isTaskRelevant(item.reasons, need.task);
+    const adminOk =
+      need.role === "admin" &&
+      item.reasons.includes("admin_office_fit") &&
+      item.reasons.includes("task_match");
+
+    const low =
+      !taskFit &&
+      !adminOk &&
+      (need.task !== "other" || topScore - item.score >= 8);
+
+    return { ...item, lowRelevance: low };
+  });
+}
+
 export function rankTools(tools: Tool[], need: UserNeed, topK = 6): RankedTool[] {
   const ranked: RankedTool[] = [];
   for (const tool of tools) {
@@ -277,7 +322,7 @@ export function rankTools(tools: Tool[], need: UserNeed, topK = 6): RankedTool[]
     }
   }
 
-  return ranked.slice(0, topK);
+  return markLowRelevance(ranked.slice(0, topK), need);
 }
 
 export function difficultyLabel(stars: number, locale: "zh-TW" | "en"): string {

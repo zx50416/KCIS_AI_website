@@ -62,6 +62,8 @@ export type RankedTool = {
   officialUrl: string | null;
   tool: Tool;
   pinnedCore?: boolean;
+  /** Filled to reach 6 picks but weak task fit */
+  lowRelevance?: boolean;
 };
 
 export type WizardStep =

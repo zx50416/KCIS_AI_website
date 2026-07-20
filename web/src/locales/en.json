@@ -31,6 +31,9 @@
     "stars": "stars",
     "starsHint": "More stars = this AI tool takes more time to learn",
     "coreBadge": "Core pick",
+    "lowRelevanceBadge": "Lower relevance",
+    "lowRelevanceHint": "This tool is a weaker fit for your chosen task — try the options above first.",
+    "lowRelevanceNote": "Items marked “Lower relevance” fill out six picks and may not suit this need.",
     "easyLearn": "Very easy",
     "otherHint": "Say what you want in one sentence (goes into the prompt; ranking still uses role/office)"
   },

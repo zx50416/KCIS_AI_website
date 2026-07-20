@@ -90,6 +90,9 @@ export function ResultsPanel({
       </div>
 
       <p className="mt-4 text-xs text-kc-muted">{t.nav.starsHint}</p>
+      {ranked.some((r) => r.lowRelevance) ? (
+        <p className="mt-1 text-xs text-amber-800/90">{t.nav.lowRelevanceNote}</p>
+      ) : null}
 
       <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {ranked.map((item, index) => (
@@ -100,7 +103,7 @@ export function ResultsPanel({
             transition={{ delay: reduce ? 0 : index * 0.08 }}
             className={`kc-card kc-choice relative flex flex-col overflow-hidden p-4 sm:p-5 ${
               item.pinnedCore ? "kc-core-card" : ""
-            }`}
+            } ${item.lowRelevance ? "kc-low-relevance-card" : ""}`}
           >
             <span className="kc-sparkles" aria-hidden>
               <span className="kc-sparkle kc-sparkle-a">✦</span>
@@ -111,6 +114,11 @@ export function ResultsPanel({
                 {item.pinnedCore ? (
                   <span className="mb-1 inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-kc-blue to-kc-purple px-2 py-0.5 text-[11px] font-semibold text-white">
                     ✦ {t.nav.coreBadge}
+                  </span>
+                ) : null}
+                {item.lowRelevance ? (
+                  <span className="mb-1 inline-flex items-center gap-1 rounded-full border border-amber-400/80 bg-amber-50 px-2 py-0.5 text-[11px] font-semibold text-amber-800">
+                    {t.nav.lowRelevanceBadge}
                   </span>
                 ) : null}
                 <h3 className="font-display text-xl font-semibold text-kc-blue-deep">{item.name}</h3>
@@ -131,6 +139,11 @@ export function ResultsPanel({
             <p className="relative z-[1] mt-2 text-sm text-kc-muted">
               {pickLocalized(item.tool.shortDescription, locale)}
             </p>
+            {item.lowRelevance ? (
+              <p className="relative z-[1] mt-2 rounded-xl border border-amber-200/80 bg-amber-50/90 px-3 py-2 text-xs leading-relaxed text-amber-900">
+                {t.nav.lowRelevanceHint}
+              </p>
+            ) : null}
             <div className="relative z-[1] mt-3">
               <p className="text-xs font-semibold text-kc-purple">{t.nav.why}</p>
               <ul className="mt-1 space-y-1 text-sm text-kc-ink">

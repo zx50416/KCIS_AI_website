@@ -246,6 +246,11 @@ body {
   background: linear-gradient(165deg, rgba(255, 255, 255, 0.98), rgba(244, 241, 250, 0.96));
 }
 
+.kc-low-relevance-card {
+  border-color: rgba(251, 191, 36, 0.55);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.98), rgba(255, 251, 235, 0.92));
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .kc-sparkle-a {
     animation: kc-twinkle 2.8s ease-in-out infinite;
