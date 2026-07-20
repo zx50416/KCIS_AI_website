@@ -63,7 +63,7 @@ export function NavigatorApp() {
   const levelIds = need.role ? levelsForRole(need.role) : [];
 
   const ranked = useMemo(
-    () => rankTools(tools, needWithLocale, 4),
+    () => rankTools(tools, needWithLocale, 6),
     [tools, needWithLocale],
   );
 

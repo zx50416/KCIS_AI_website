@@ -176,6 +176,21 @@ body {
   background: white;
 }
 
+.kc-btn-kuse {
+  @apply inline-flex items-center justify-center rounded-full border-2 px-4 py-2 text-sm font-bold transition;
+  border-color: #f97316;
+  color: #c2410c;
+  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+  box-shadow:
+    0 0 0 2px rgba(249, 115, 22, 0.15),
+    0 8px 20px rgba(249, 115, 22, 0.18);
+}
+
+.kc-btn-kuse:hover {
+  border-color: #ea580c;
+  background: linear-gradient(180deg, #ffedd5 0%, #fed7aa 100%);
+}
+
 .kc-chip {
   @apply rounded-full border px-3 py-1.5 text-sm transition;
   border-color: var(--kc-line);

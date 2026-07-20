@@ -128,6 +128,8 @@
     "free_unknown": "免費資訊還要再確認",
     "specialized_boost": "比較專精這類用途",
     "media_boost": "適合做圖片／影音",
+    "video_boost": "適合 AI 影片生成／互動影片",
+    "image_boost": "適合 AI 製圖／視覺素材",
     "devtools_boost": "適合學程式／做專案",
     "research_boost": "適合整理資料",
     "admin_office_fit": "適合校園行政文書與簡報",
@@ -138,7 +140,8 @@
     "title": "提示小幫手",
     "subtitle": "點下面的提示，改一改，再複製到 AI 裡用。",
     "openGemini": "打開 Gemini",
-    "openChatGPT": "打開 ChatGPT"
+    "openChatGPT": "打開 ChatGPT",
+    "openKuse": "打開 Kuse"
   },
   "footer": ""
 }

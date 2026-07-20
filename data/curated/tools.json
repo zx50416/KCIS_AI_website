@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "generatedAt": "2026-07-17",
+  "generatedAt": "2026-07-20",
   "localeKeys": [
     "zh-TW",
     "en"
   ],
-  "count": 28,
+  "count": 39,
   "tools": [
     {
       "id": "kuse",
@@ -50,7 +50,7 @@
       "freeStatus": "freemium",
       "requiresAccount": true,
       "googleLogin": "unknown",
-      "difficultyStars": 2,
+      "difficultyStars": 1,
       "difficulty": "easy",
       "shortDescription": {
         "zh-TW": "康軒 × Kuse：結合康軒教材與課綱，快速生成教案、學習單、測驗與簡報等備課素材。",
@@ -80,21 +80,77 @@
       "pageStatus": "placeholder"
     },
     {
-      "id": "gemini",
-      "slug": "gemini",
-      "name": "Gemini",
+      "id": "brainingcamp",
+      "slug": "brainingcamp",
+      "name": "BrainingCamp",
       "aliases": [],
       "categories": [
-        "generative_text"
+        "subject_specialized"
       ],
       "tasks": [
-        "lesson_plan",
+        "simulation",
         "worksheet",
-        "quiz",
-        "translate",
-        "writing",
-        "research",
         "tutoring"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "paid",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "數學虛擬教具與互動操作，適合概念具體化。",
+        "en": "Virtual math manipulatives for concrete concept building."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://www.brainingcamp.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "needs_review",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "canva",
+      "slug": "canva",
+      "name": "Canva",
+      "aliases": [],
+      "categories": [
+        "media_music",
+        "whiteboard_collab"
+      ],
+      "tasks": [
+        "presentation",
+        "worksheet",
+        "image",
+        "poster",
+        "video"
       ],
       "roles": [
         "teacher",
@@ -113,11 +169,11 @@
       "freeStatus": "freemium",
       "requiresAccount": true,
       "googleLogin": true,
-      "difficultyStars": 2,
+      "difficultyStars": 1,
       "difficulty": "easy",
       "shortDescription": {
-        "zh-TW": "Google 多模態對話助手，適合備課、出題、摘要與雙語教材草稿。",
-        "en": "Google multimodal assistant for lesson prep, quizzes, summaries, and bilingual drafts."
+        "zh-TW": "設計與簡報平台，模板多，適合海報、學習單版面與簡報。",
+        "en": "Design platform with templates for posters, worksheets, and slides."
       },
       "strengths": [],
       "limitations": [],
@@ -128,8 +184,8 @@
         }
       ],
       "useCases": [],
-      "officialUrl": "https://gemini.google.com/",
-      "educationUrl": null,
+      "officialUrl": "https://www.canva.com/",
+      "educationUrl": "https://www.canva.com/education/",
       "priorityCore": false,
       "sourceRefs": [
         {
@@ -206,815 +262,6 @@
       "pageStatus": "placeholder"
     },
     {
-      "id": "magicschool",
-      "slug": "magicschool",
-      "name": "MagicSchool",
-      "aliases": [],
-      "categories": [
-        "generative_text"
-      ],
-      "tasks": [
-        "lesson_plan",
-        "worksheet",
-        "quiz",
-        "feedback",
-        "admin_draft"
-      ],
-      "roles": [
-        "teacher"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high"
-      ],
-      "languages": [
-        "en",
-        "zh-TW"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "面向教師的 AI 工具集合，常見於教案、差異化教學與行政文書。",
-        "en": "Teacher-oriented AI toolkit for lesson planning, differentiation, and admin drafts."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://www.magicschool.ai/",
-      "educationUrl": "https://www.magicschool.ai/",
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "edcafe",
-      "slug": "edcafe",
-      "name": "Edcafe",
-      "aliases": [],
-      "categories": [
-        "generative_text"
-      ],
-      "tasks": [
-        "lesson_plan",
-        "worksheet",
-        "quiz",
-        "tutoring"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "unknown",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 3,
-      "difficulty": "medium",
-      "shortDescription": {
-        "zh-TW": "教育取向的 AI 學習／備課輔助（細節待官方頁驗證）。",
-        "en": "Education-oriented AI assistant (details pending official verification)."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://www.edcafe.ai/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "needs_review",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "mathgpt",
-      "slug": "mathgpt",
-      "name": "MathGPT",
-      "aliases": [],
-      "categories": [
-        "generative_text",
-        "subject_specialized"
-      ],
-      "tasks": [
-        "tutoring",
-        "quiz",
-        "worksheet"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "en",
-        "zh-TW"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 3,
-      "difficulty": "medium",
-      "shortDescription": {
-        "zh-TW": "數學解題與講解取向的 AI，適合練習與步驟說明。",
-        "en": "Math-focused AI for step-by-step practice and explanations."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://math-gpt.org/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "needs_review",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "vidnoz",
-      "slug": "vidnoz",
-      "name": "Vidnoz AI",
-      "aliases": [],
-      "categories": [
-        "media_music"
-      ],
-      "tasks": [
-        "video",
-        "presentation"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 3,
-      "difficulty": "medium",
-      "shortDescription": {
-        "zh-TW": "AI 影片／虛擬人物相關創作工具，適合短影片教材。",
-        "en": "AI video / avatar creation tool for short instructional clips."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://www.vidnoz.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "sudoai",
-      "slug": "sudoai",
-      "name": "SudoAI",
-      "aliases": [],
-      "categories": [
-        "media_music"
-      ],
-      "tasks": [
-        "image",
-        "video"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "high",
-        "university"
-      ],
-      "languages": [
-        "en",
-        "zh-TW"
-      ],
-      "freeStatus": "unknown",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 4,
-      "difficulty": "advanced",
-      "shortDescription": {
-        "zh-TW": "媒體生成類工具（官方資訊待確認，第一版標記 needs_review）。",
-        "en": "Media generation tool (official details pending review)."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": null,
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "needs_review",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "sora",
-      "slug": "sora",
-      "name": "Sora",
-      "aliases": [],
-      "categories": [
-        "media_music"
-      ],
-      "tasks": [
-        "video"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "high",
-        "university"
-      ],
-      "languages": [
-        "en"
-      ],
-      "freeStatus": "paid",
-      "requiresAccount": true,
-      "googleLogin": "unknown",
-      "difficultyStars": 4,
-      "difficulty": "advanced",
-      "shortDescription": {
-        "zh-TW": "OpenAI 影片生成相關產品；2026-07 官方頁面出現停用說明，第一版預設不推薦。",
-        "en": "OpenAI video product; official page indicated discontinuation as of 2026-07 crawl — excluded from default recommendations."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://openai.com/sora",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "deprecated",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "canva",
-      "slug": "canva",
-      "name": "Canva",
-      "aliases": [],
-      "categories": [
-        "media_music",
-        "whiteboard_collab"
-      ],
-      "tasks": [
-        "presentation",
-        "worksheet",
-        "image",
-        "poster"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": true,
-      "difficultyStars": 1,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "設計與簡報平台，模板多，適合海報、學習單版面與簡報。",
-        "en": "Design platform with templates for posters, worksheets, and slides."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://www.canva.com/",
-      "educationUrl": "https://www.canva.com/education/",
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "suno",
-      "slug": "suno",
-      "name": "Suno",
-      "aliases": [],
-      "categories": [
-        "media_music"
-      ],
-      "tasks": [
-        "music",
-        "sound",
-        "video"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "middle",
-        "high",
-        "university",
-        "elementary"
-      ],
-      "languages": [
-        "en",
-        "zh-TW"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "用文字描述就能生成歌曲與人聲，適合興趣探索、配樂靈感與創意專題。",
-        "en": "Text-to-song generation with vocals — great for exploration, soundbeds, and creative projects."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://suno.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "soundraw",
-      "slug": "soundraw",
-      "name": "Soundraw",
-      "aliases": [],
-      "categories": [
-        "media_music"
-      ],
-      "tasks": [
-        "music",
-        "sound"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "middle",
-        "high",
-        "university",
-        "elementary"
-      ],
-      "languages": [
-        "en"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "AI 音樂生成，適合影片配樂或課堂氣氛音樂（注意授權）。",
-        "en": "AI music generation for video beds or class atmosphere (check licensing)."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://soundraw.io/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "ecrettmusic",
-      "slug": "ecrettmusic",
-      "name": "Ecrett Music",
-      "aliases": [],
-      "categories": [
-        "media_music"
-      ],
-      "tasks": [
-        "music",
-        "sound"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "en"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "依情緒／場景選配的音樂素材工具。",
-        "en": "Scene/mood-based music creation tool."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://ecrettmusic.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "notebooklm",
-      "slug": "notebooklm",
-      "name": "NotebookLM",
-      "aliases": [],
-      "categories": [
-        "reading_research"
-      ],
-      "tasks": [
-        "research",
-        "summary",
-        "quiz",
-        "lesson_plan"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "high",
-        "university",
-        "middle"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": true,
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "依使用者提供的來源整理筆記、問答與導讀，適合教材彙整。",
-        "en": "Grounded notes/Q&A from user-provided sources; good for material synthesis."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://notebooklm.google.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "konkang_voice",
-      "slug": "konkang_voice",
-      "name": "康軒 AI 語音小助手",
-      "aliases": [
-        "康軒AI語音小助手"
-      ],
-      "categories": [
-        "voice_assist"
-      ],
-      "tasks": [
-        "language_practice",
-        "tutoring"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle"
-      ],
-      "languages": [
-        "zh-TW"
-      ],
-      "freeStatus": "unknown",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "康軒相關語音輔助工具，細節與入口待校內／官方確認。",
-        "en": "Kang Hsuan-related voice assistant; entry details pending verification."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": null,
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "needs_review",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "padlet",
-      "slug": "padlet",
-      "name": "Padlet",
-      "aliases": [],
-      "categories": [
-        "whiteboard_collab"
-      ],
-      "tasks": [
-        "collaboration",
-        "brainstorm",
-        "presentation"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": "unknown",
-      "difficultyStars": 1,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "牆板式協作，適合腦力激盪、作品牆與課堂回應。",
-        "en": "Board-style collaboration for brainstorming and class responses."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://padlet.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "curipod",
-      "slug": "curipod",
-      "name": "Curipod",
-      "aliases": [],
-      "categories": [
-        "whiteboard_collab"
-      ],
-      "tasks": [
-        "lesson_plan",
-        "quiz",
-        "presentation",
-        "collaboration"
-      ],
-      "roles": [
-        "teacher"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high"
-      ],
-      "languages": [
-        "en"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "互動課堂簡報／活動生成，偏教師引導的即時互動。",
-        "en": "Interactive lesson slides/activities for live classroom engagement."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://curipod.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
       "id": "classpoint",
       "slug": "classpoint",
       "name": "ClassPoint",
@@ -1059,472 +306,6 @@
       ],
       "useCases": [],
       "officialUrl": "https://www.classpoint.io/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "seesaw",
-      "slug": "seesaw",
-      "name": "Seesaw",
-      "aliases": [],
-      "categories": [
-        "whiteboard_collab"
-      ],
-      "tasks": [
-        "collaboration",
-        "portfolio",
-        "feedback"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle"
-      ],
-      "languages": [
-        "en",
-        "zh-TW"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "學習歷程與家庭連結平台，常見於小學作品蒐集。",
-        "en": "Learning journal / family connection platform, common in elementary."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://seesaw.me/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "google_sites",
-      "slug": "google_sites",
-      "name": "Google Sites",
-      "aliases": [],
-      "categories": [
-        "whiteboard_collab"
-      ],
-      "tasks": [
-        "presentation",
-        "portfolio",
-        "collaboration"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "free",
-      "requiresAccount": true,
-      "googleLogin": true,
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "用學校 Google 帳號快速建立單元網頁或成果頁。",
-        "en": "Build unit or portfolio sites quickly with a Google account."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://sites.google.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "freeform",
-      "slug": "freeform",
-      "name": "無邊記",
-      "aliases": [
-        "Freeform",
-        "Apple Freeform"
-      ],
-      "categories": [
-        "whiteboard_collab"
-      ],
-      "tasks": [
-        "brainstorm",
-        "collaboration",
-        "presentation"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "free",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "Apple 無邊記（Freeform）白板，適合腦力激盪與視覺整理。",
-        "en": "Apple Freeform whiteboard for brainstorming and visual organization."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://support.apple.com/guide/freeform/welcome/mac",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "needs_review",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "stellarium",
-      "slug": "stellarium",
-      "name": "Stellarium",
-      "aliases": [],
-      "categories": [
-        "subject_specialized"
-      ],
-      "tasks": [
-        "simulation",
-        "tutoring"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "zh-TW",
-        "en"
-      ],
-      "freeStatus": "free",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 3,
-      "difficulty": "medium",
-      "shortDescription": {
-        "zh-TW": "天文星空模擬，適合地球科學／天文單元。",
-        "en": "Planetarium simulation for earth science / astronomy units."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://stellarium.org/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "brainingcamp",
-      "slug": "brainingcamp",
-      "name": "BrainingCamp",
-      "aliases": [],
-      "categories": [
-        "subject_specialized"
-      ],
-      "tasks": [
-        "simulation",
-        "worksheet",
-        "tutoring"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high"
-      ],
-      "languages": [
-        "en"
-      ],
-      "freeStatus": "paid",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 3,
-      "difficulty": "medium",
-      "shortDescription": {
-        "zh-TW": "數學虛擬教具與互動操作，適合概念具體化。",
-        "en": "Virtual math manipulatives for concrete concept building."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://www.brainingcamp.com/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "needs_review",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "hyread",
-      "slug": "hyread",
-      "name": "HyRead",
-      "aliases": [],
-      "categories": [
-        "subject_specialized",
-        "reading_research"
-      ],
-      "tasks": [
-        "reading",
-        "research"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high",
-        "university"
-      ],
-      "languages": [
-        "zh-TW"
-      ],
-      "freeStatus": "unknown",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 2,
-      "difficulty": "easy",
-      "shortDescription": {
-        "zh-TW": "華文電子書／圖書館閱讀服務（校園方案依單位而異）。",
-        "en": "Chinese ebook / library reading service (campus plans vary)."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://www.hyread.com.tw/",
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "active",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "xiaoshengtong",
-      "slug": "xiaoshengtong",
-      "name": "曉聲通",
-      "aliases": [],
-      "categories": [
-        "subject_specialized",
-        "voice_assist"
-      ],
-      "tasks": [
-        "language_practice",
-        "reading"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "elementary",
-        "middle",
-        "high"
-      ],
-      "languages": [
-        "zh-TW"
-      ],
-      "freeStatus": "unknown",
-      "requiresAccount": "unknown",
-      "googleLogin": "unknown",
-      "difficultyStars": 3,
-      "difficulty": "medium",
-      "shortDescription": {
-        "zh-TW": "語音／朗讀相關教育工具（官方入口待確認）。",
-        "en": "Speech/reading education tool (official entry pending)."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": null,
-      "educationUrl": null,
-      "priorityCore": false,
-      "sourceRefs": [
-        {
-          "type": "curated_seed",
-          "note": "Initial whitelist seed for Internal Prototype",
-          "retrievedAt": "2026-07-17"
-        }
-      ],
-      "lastVerifiedAt": null,
-      "status": "needs_review",
-      "pageStatus": "placeholder"
-    },
-    {
-      "id": "cursor",
-      "slug": "cursor",
-      "name": "Cursor",
-      "aliases": [],
-      "categories": [
-        "generative_text",
-        "devtools"
-      ],
-      "tasks": [
-        "coding",
-        "web_project",
-        "tutoring"
-      ],
-      "roles": [
-        "teacher",
-        "student"
-      ],
-      "levels": [
-        "high",
-        "university",
-        "middle"
-      ],
-      "languages": [
-        "en",
-        "zh-TW"
-      ],
-      "freeStatus": "freemium",
-      "requiresAccount": true,
-      "googleLogin": "unknown",
-      "difficultyStars": 4,
-      "difficulty": "advanced",
-      "shortDescription": {
-        "zh-TW": "AI 程式編輯器，適合資訊課專題、網頁專案與教師開發教材腳本。",
-        "en": "AI code editor for CS projects, web builds, and teachers scripting teaching tools."
-      },
-      "strengths": [],
-      "limitations": [],
-      "privacyNotes": [
-        {
-          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
-          "en": "Do not upload real student names, grades, or other personal data."
-        }
-      ],
-      "useCases": [],
-      "officialUrl": "https://cursor.com/",
       "educationUrl": null,
       "priorityCore": false,
       "sourceRefs": [
@@ -1641,6 +422,1868 @@
       ],
       "useCases": [],
       "officialUrl": "https://openai.com/codex/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "needs_review",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "curipod",
+      "slug": "curipod",
+      "name": "Curipod",
+      "aliases": [],
+      "categories": [
+        "whiteboard_collab"
+      ],
+      "tasks": [
+        "lesson_plan",
+        "quiz",
+        "presentation",
+        "collaboration"
+      ],
+      "roles": [
+        "teacher"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "互動課堂簡報／活動生成，偏教師引導的即時互動。",
+        "en": "Interactive lesson slides/activities for live classroom engagement."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://curipod.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "cursor",
+      "slug": "cursor",
+      "name": "Cursor",
+      "aliases": [],
+      "categories": [
+        "generative_text",
+        "devtools"
+      ],
+      "tasks": [
+        "coding",
+        "web_project",
+        "tutoring"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "high",
+        "university",
+        "middle"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "difficultyStars": 4,
+      "difficulty": "advanced",
+      "shortDescription": {
+        "zh-TW": "AI 程式編輯器，適合資訊課專題、網頁專案與教師開發教材腳本。",
+        "en": "AI code editor for CS projects, web builds, and teachers scripting teaching tools."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://cursor.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "ecrettmusic",
+      "slug": "ecrettmusic",
+      "name": "Ecrett Music",
+      "aliases": [],
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "music",
+        "sound"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "依情緒／場景選配的音樂素材工具。",
+        "en": "Scene/mood-based music creation tool."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://ecrettmusic.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "edcafe",
+      "slug": "edcafe",
+      "name": "Edcafe",
+      "aliases": [],
+      "categories": [
+        "generative_text"
+      ],
+      "tasks": [
+        "lesson_plan",
+        "worksheet",
+        "quiz",
+        "tutoring"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "unknown",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "教育取向的 AI 學習／備課輔助（細節待官方頁驗證）。",
+        "en": "Education-oriented AI assistant (details pending official verification)."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://www.edcafe.ai/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "needs_review",
+      "pageStatus": "placeholder"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "edpuzzle",
+      "slug": "edpuzzle",
+      "name": "Edpuzzle",
+      "categories": [
+        "media_video",
+        "subject_specialized"
+      ],
+      "tasks": [
+        "video",
+        "lesson_plan",
+        "quiz",
+        "feedback"
+      ],
+      "roles": [
+        "teacher"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "康橋校內使用：互動影片教學（嵌入題目、剪輯 YouTube 等），適合翻轉課堂。",
+        "en": "KC campus use: interactive video lessons with embedded questions."
+      },
+      "officialUrl": "https://edpuzzle.com/"
+    },
+    {
+      "id": "gemini",
+      "slug": "gemini",
+      "name": "Gemini",
+      "aliases": [],
+      "categories": [
+        "generative_text"
+      ],
+      "tasks": [
+        "lesson_plan",
+        "worksheet",
+        "quiz",
+        "translate",
+        "writing",
+        "research",
+        "tutoring"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": true,
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "Google 多模態對話助手，適合備課、出題、摘要與雙語教材草稿。",
+        "en": "Google multimodal assistant for lesson prep, quizzes, summaries, and bilingual drafts."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://gemini.google.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "google_sites",
+      "slug": "google_sites",
+      "name": "Google Sites",
+      "aliases": [],
+      "categories": [
+        "whiteboard_collab"
+      ],
+      "tasks": [
+        "presentation",
+        "portfolio",
+        "collaboration"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "free",
+      "requiresAccount": true,
+      "googleLogin": true,
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "用學校 Google 帳號快速建立單元網頁或成果頁。",
+        "en": "Build unit or portfolio sites quickly with a Google account."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://sites.google.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "heygen",
+      "slug": "heygen",
+      "name": "HeyGen",
+      "categories": [
+        "media_video"
+      ],
+      "tasks": [
+        "video",
+        "presentation",
+        "translate"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "AI 虛擬講者／數位人影片，適合解說、雙語教材與簡短教學片。",
+        "en": "AI avatar videos for explainers, bilingual lessons, and short teaching clips."
+      },
+      "officialUrl": "https://www.heygen.com/"
+    },
+    {
+      "id": "hyread",
+      "slug": "hyread",
+      "name": "HyRead",
+      "aliases": [],
+      "categories": [
+        "subject_specialized",
+        "reading_research"
+      ],
+      "tasks": [
+        "reading",
+        "research"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW"
+      ],
+      "freeStatus": "unknown",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "華文電子書／圖書館閱讀服務（校園方案依單位而異）。",
+        "en": "Chinese ebook / library reading service (campus plans vary)."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://www.hyread.com.tw/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "luma",
+      "slug": "luma",
+      "name": "Luma Dream Machine",
+      "categories": [
+        "media_video"
+      ],
+      "tasks": [
+        "video",
+        "simulation",
+        "interest_explore"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "文字／圖片轉影片，動態與物理感較自然，適合 STEM 示意與概念短片。",
+        "en": "Text/image-to-video with natural motion — useful for STEM demos and concept clips."
+      },
+      "officialUrl": "https://lumalabs.ai/dream-machine"
+    },
+    {
+      "id": "magicschool",
+      "slug": "magicschool",
+      "name": "MagicSchool",
+      "aliases": [],
+      "categories": [
+        "generative_text"
+      ],
+      "tasks": [
+        "lesson_plan",
+        "worksheet",
+        "quiz",
+        "feedback",
+        "admin_draft"
+      ],
+      "roles": [
+        "teacher"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "面向教師的 AI 工具集合，常見於教案、差異化教學與行政文書。",
+        "en": "Teacher-oriented AI toolkit for lesson planning, differentiation, and admin drafts."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://www.magicschool.ai/",
+      "educationUrl": "https://www.magicschool.ai/",
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "mathgpt",
+      "slug": "mathgpt",
+      "name": "MathGPT",
+      "aliases": [],
+      "categories": [
+        "generative_text",
+        "subject_specialized"
+      ],
+      "tasks": [
+        "tutoring",
+        "quiz",
+        "worksheet"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "數學解題與講解取向的 AI，適合練習與步驟說明。",
+        "en": "Math-focused AI for step-by-step practice and explanations."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://math-gpt.org/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "needs_review",
+      "pageStatus": "placeholder"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "copilot",
+      "slug": "copilot",
+      "name": "Microsoft Copilot",
+      "categories": [
+        "generative_text"
+      ],
+      "tasks": [
+        "writing",
+        "research",
+        "summary",
+        "presentation",
+        "translate",
+        "homework_help",
+        "study_notes"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "微軟 AI 助手，整合 Office／Edge，適合寫作、摘要與簡報草稿。",
+        "en": "Microsoft AI assistant for writing, summaries, and presentation drafts."
+      },
+      "officialUrl": "https://copilot.microsoft.com/"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "myedit",
+      "slug": "myedit",
+      "name": "MyEdit",
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "image",
+        "poster"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "free",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "康橋校內使用：美術課 AI 修圖／製圖工具。",
+        "en": "KC campus use: AI photo editing and image creation for art class."
+      },
+      "officialUrl": "https://myedit.online/"
+    },
+    {
+      "id": "notebooklm",
+      "slug": "notebooklm",
+      "name": "NotebookLM",
+      "aliases": [],
+      "categories": [
+        "reading_research"
+      ],
+      "tasks": [
+        "research",
+        "summary",
+        "quiz",
+        "lesson_plan"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "high",
+        "university",
+        "middle"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": true,
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "依使用者提供的來源整理筆記、問答與導讀，適合教材彙整。",
+        "en": "Grounded notes/Q&A from user-provided sources; good for material synthesis."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://notebooklm.google.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "padlet",
+      "slug": "padlet",
+      "name": "Padlet",
+      "aliases": [],
+      "categories": [
+        "whiteboard_collab"
+      ],
+      "tasks": [
+        "collaboration",
+        "brainstorm",
+        "presentation"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "difficultyStars": 1,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "牆板式協作，適合腦力激盪、作品牆與課堂回應。",
+        "en": "Board-style collaboration for brainstorming and class responses."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://padlet.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "pika",
+      "slug": "pika",
+      "name": "Pika",
+      "categories": [
+        "media_video"
+      ],
+      "tasks": [
+        "video",
+        "image"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "快速生成短影片／動態片段，適合社群風格與快速試作。",
+        "en": "Fast short AI video clips — good for quick drafts and social-style content."
+      },
+      "officialUrl": "https://pika.art/"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "pixton",
+      "slug": "pixton",
+      "name": "Pixton",
+      "categories": [
+        "media_music",
+        "whiteboard_collab"
+      ],
+      "tasks": [
+        "image",
+        "poster",
+        "writing",
+        "presentation",
+        "portfolio"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "漫畫／故事格創作，適合英文寫作、視覺敘事與專題展示。",
+        "en": "Comic and storyboard creation for visual storytelling and English projects."
+      },
+      "officialUrl": "https://www.pixton.com/"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "playground_ai",
+      "slug": "playground-ai",
+      "name": "Playground AI",
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "image",
+        "poster",
+        "interest_explore"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "free",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "康橋校內使用：美術課 AI 生圖，適合探索風格與海報草稿。",
+        "en": "KC campus use: AI image generation for art projects and poster drafts."
+      },
+      "officialUrl": "https://playground.com/"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "recraft",
+      "slug": "recraft",
+      "name": "Recraft AI",
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "image",
+        "poster",
+        "portfolio"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "free",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "康橋校內使用：英文專題／美術課 AI 製圖（向量化、插畫風格）。",
+        "en": "KC campus use: AI illustration for English projects and art classes."
+      },
+      "officialUrl": "https://www.recraft.ai/"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "runway",
+      "slug": "runway",
+      "name": "Runway",
+      "categories": [
+        "media_video"
+      ],
+      "tasks": [
+        "video",
+        "image",
+        "presentation"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "AI 影片生成（Gen-4），適合創意短片、視覺素材與進階專題。",
+        "en": "AI video generation (Gen-4) for creative clips and visual projects."
+      },
+      "officialUrl": "https://runwayml.com/"
+    },
+    {
+      "id": "seesaw",
+      "slug": "seesaw",
+      "name": "Seesaw",
+      "aliases": [],
+      "categories": [
+        "whiteboard_collab"
+      ],
+      "tasks": [
+        "collaboration",
+        "portfolio",
+        "feedback"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "學習歷程與家庭連結平台，常見於小學作品蒐集。",
+        "en": "Learning journal / family connection platform, common in elementary."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://seesaw.me/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "sora",
+      "slug": "sora",
+      "name": "Sora",
+      "aliases": [],
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "video"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "paid",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "difficultyStars": 4,
+      "difficulty": "advanced",
+      "shortDescription": {
+        "zh-TW": "OpenAI 影片生成相關產品；2026-07 官方頁面出現停用說明，第一版預設不推薦。",
+        "en": "OpenAI video product; official page indicated discontinuation as of 2026-07 crawl — excluded from default recommendations."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://openai.com/sora",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "deprecated",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "soundraw",
+      "slug": "soundraw",
+      "name": "Soundraw",
+      "aliases": [],
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "music",
+        "sound"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university",
+        "elementary"
+      ],
+      "languages": [
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "AI 音樂生成，適合影片配樂或課堂氣氛音樂（注意授權）。",
+        "en": "AI music generation for video beds or class atmosphere (check licensing)."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://soundraw.io/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "stellarium",
+      "slug": "stellarium",
+      "name": "Stellarium",
+      "aliases": [],
+      "categories": [
+        "subject_specialized"
+      ],
+      "tasks": [
+        "simulation",
+        "tutoring"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "free",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "天文星空模擬，適合地球科學／天文單元。",
+        "en": "Planetarium simulation for earth science / astronomy units."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://stellarium.org/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "sudoai",
+      "slug": "sudoai",
+      "name": "SudoAI",
+      "aliases": [],
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "image",
+        "video"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "unknown",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 4,
+      "difficulty": "advanced",
+      "shortDescription": {
+        "zh-TW": "媒體生成類工具（官方資訊待確認，第一版標記 needs_review）。",
+        "en": "Media generation tool (official details pending review)."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": null,
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "needs_review",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "suno",
+      "slug": "suno",
+      "name": "Suno",
+      "aliases": [],
+      "categories": [
+        "media_music"
+      ],
+      "tasks": [
+        "music",
+        "sound",
+        "video"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university",
+        "elementary"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "用文字描述就能生成歌曲與人聲，適合興趣探索、配樂靈感與創意專題。",
+        "en": "Text-to-song generation with vocals — great for exploration, soundbeds, and creative projects."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://suno.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "vidnoz",
+      "slug": "vidnoz",
+      "name": "Vidnoz AI",
+      "aliases": [],
+      "categories": [
+        "media_music",
+        "media_video"
+      ],
+      "tasks": [
+        "video",
+        "presentation"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "freemium",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "AI 影片／虛擬人物相關創作工具，適合短影片教材。",
+        "en": "AI video / avatar creation tool for short instructional clips."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://www.vidnoz.com/",
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder"
+    },
+    {
+      "aliases": [],
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "KC school AI list + web research 2026-07",
+          "retrievedAt": "2026-07-20"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "active",
+      "pageStatus": "placeholder",
+      "requiresAccount": true,
+      "googleLogin": "unknown",
+      "id": "wevideo",
+      "slug": "wevideo",
+      "name": "WeVideo",
+      "categories": [
+        "media_video"
+      ],
+      "tasks": [
+        "video",
+        "presentation",
+        "portfolio"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "en",
+        "zh-TW"
+      ],
+      "freeStatus": "freemium",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "康橋校內使用：雲端影片剪輯，含 AI 輔助功能，適合專題與簡報影片。",
+        "en": "KC campus use: cloud video editor with AI assists for projects and slide videos."
+      },
+      "officialUrl": "https://www.wevideo.com/"
+    },
+    {
+      "id": "konkang_voice",
+      "slug": "konkang_voice",
+      "name": "康軒 AI 語音小助手",
+      "aliases": [
+        "康軒AI語音小助手"
+      ],
+      "categories": [
+        "voice_assist"
+      ],
+      "tasks": [
+        "language_practice",
+        "tutoring"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle"
+      ],
+      "languages": [
+        "zh-TW"
+      ],
+      "freeStatus": "unknown",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "康軒相關語音輔助工具，細節與入口待校內／官方確認。",
+        "en": "Kang Hsuan-related voice assistant; entry details pending verification."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": null,
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "needs_review",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "xiaoshengtong",
+      "slug": "xiaoshengtong",
+      "name": "曉聲通",
+      "aliases": [],
+      "categories": [
+        "subject_specialized",
+        "voice_assist"
+      ],
+      "tasks": [
+        "language_practice",
+        "reading"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high"
+      ],
+      "languages": [
+        "zh-TW"
+      ],
+      "freeStatus": "unknown",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 3,
+      "difficulty": "medium",
+      "shortDescription": {
+        "zh-TW": "語音／朗讀相關教育工具（官方入口待確認）。",
+        "en": "Speech/reading education tool (official entry pending)."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": null,
+      "educationUrl": null,
+      "priorityCore": false,
+      "sourceRefs": [
+        {
+          "type": "curated_seed",
+          "note": "Initial whitelist seed for Internal Prototype",
+          "retrievedAt": "2026-07-17"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "status": "needs_review",
+      "pageStatus": "placeholder"
+    },
+    {
+      "id": "freeform",
+      "slug": "freeform",
+      "name": "無邊記",
+      "aliases": [
+        "Freeform",
+        "Apple Freeform"
+      ],
+      "categories": [
+        "whiteboard_collab"
+      ],
+      "tasks": [
+        "brainstorm",
+        "collaboration",
+        "presentation"
+      ],
+      "roles": [
+        "teacher",
+        "student"
+      ],
+      "levels": [
+        "elementary",
+        "middle",
+        "high",
+        "university"
+      ],
+      "languages": [
+        "zh-TW",
+        "en"
+      ],
+      "freeStatus": "free",
+      "requiresAccount": "unknown",
+      "googleLogin": "unknown",
+      "difficultyStars": 2,
+      "difficulty": "easy",
+      "shortDescription": {
+        "zh-TW": "Apple 無邊記（Freeform）白板，適合腦力激盪與視覺整理。",
+        "en": "Apple Freeform whiteboard for brainstorming and visual organization."
+      },
+      "strengths": [],
+      "limitations": [],
+      "privacyNotes": [
+        {
+          "zh-TW": "請勿上傳學生真實姓名、成績或其他個資。",
+          "en": "Do not upload real student names, grades, or other personal data."
+        }
+      ],
+      "useCases": [],
+      "officialUrl": "https://support.apple.com/guide/freeform/welcome/mac",
       "educationUrl": null,
       "priorityCore": false,
       "sourceRefs": [

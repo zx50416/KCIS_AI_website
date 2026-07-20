@@ -14,8 +14,21 @@ const WEIGHTS = {
   generalistPenalty: 5,
 };
 
-/** Chat-first tools — useful, but should not win music/coding/etc. */
-const GENERALIST_IDS = new Set(["chatgpt", "gemini", "magicschool", "edcafe", "kuse"]);
+/** Dedicated AI video tools — should rank above generalists for video tasks */
+const VIDEO_SPECIALIST_IDS = new Set([
+  "runway",
+  "heygen",
+  "pika",
+  "luma",
+  "vidnoz",
+  "edpuzzle",
+  "wevideo",
+]);
+
+const GENERALIST_IDS = new Set(["chatgpt", "gemini", "magicschool", "edcafe", "kuse", "copilot"]);
+
+/** KC campus AI image tools from school spreadsheet */
+const IMAGE_AI_IDS = new Set(["recraft", "myedit", "playground_ai", "canva", "pixton"]);
 
 const CORE_TEACHING_TASKS = new Set([
   "lesson_plan",
@@ -119,14 +132,26 @@ export function scoreTool(tool: Tool, need: UserNeed): { score: number; reasons:
     }
   }
   if (rawTask === "video" || task === "video") {
-    if (tool.categories.includes("media_music") || tool.id === "vidnoz" || tool.id === "canva") {
+    if (VIDEO_SPECIALIST_IDS.has(tool.id)) {
+      score += WEIGHTS.specialized;
+      reasons.push("video_boost");
+    } else if (tool.categories.includes("media_video")) {
       score += WEIGHTS.specialized - 2;
+      reasons.push("video_boost");
+    } else if (tool.id === "canva") {
+      score += WEIGHTS.specialized - 4;
+      reasons.push("media_boost");
+    } else if (tool.categories.includes("media_music") && tool.tasks.includes("video")) {
+      score += WEIGHTS.specialized - 3;
       reasons.push("media_boost");
     }
   }
   if (rawTask === "image" || task === "image") {
-    if (tool.id === "canva" || tool.categories.includes("media_music")) {
-      score += WEIGHTS.specialized - 1;
+    if (IMAGE_AI_IDS.has(tool.id)) {
+      score += WEIGHTS.specialized;
+      reasons.push("image_boost");
+    } else if (tool.categories.includes("media_music")) {
+      score += WEIGHTS.specialized - 2;
       reasons.push("media_boost");
     }
   }
@@ -217,7 +242,7 @@ export function isCoreCapable(tool: Tool, need: UserNeed, reasons: string[]): bo
   return false;
 }
 
-export function rankTools(tools: Tool[], need: UserNeed, topK = 4): RankedTool[] {
+export function rankTools(tools: Tool[], need: UserNeed, topK = 6): RankedTool[] {
   const ranked: RankedTool[] = [];
   for (const tool of tools) {
     const { score, reasons } = scoreTool(tool, need);

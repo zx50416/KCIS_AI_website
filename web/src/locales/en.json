@@ -128,6 +128,8 @@
     "free_unknown": "Free status needs a check",
     "specialized_boost": "Strong specialist fit",
     "media_boost": "Good for media",
+    "video_boost": "Strong for AI video / interactive video",
+    "image_boost": "Strong for AI images / visuals",
     "devtools_boost": "Good for coding / projects",
     "research_boost": "Good for source work",
     "admin_office_fit": "Fits school office writing and slides",
@@ -138,7 +140,8 @@
     "title": "Prompt helper",
     "subtitle": "Tap a hint, edit if you like, then copy it into an AI tool.",
     "openGemini": "Open Gemini",
-    "openChatGPT": "Open ChatGPT"
+    "openChatGPT": "Open ChatGPT",
+    "openKuse": "Open Kuse"
   },
   "footer": ""
 }

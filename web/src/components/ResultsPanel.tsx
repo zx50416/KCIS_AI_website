@@ -91,7 +91,7 @@ export function ResultsPanel({
 
       <p className="mt-4 text-xs text-kc-muted">{t.nav.starsHint}</p>
 
-      <div className="mt-3 grid gap-4 sm:grid-cols-2">
+      <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {ranked.map((item, index) => (
           <motion.article
             key={item.id}
@@ -234,9 +234,9 @@ export function ResultsPanel({
             href="https://kuse.knsh.com.tw/"
             target="_blank"
             rel="noreferrer"
-            className="kc-btn-ghost"
+            className="kc-btn-kuse"
           >
-            打開 Kuse
+            {t.prompt.openKuse}
           </a>
         </div>
       </div>

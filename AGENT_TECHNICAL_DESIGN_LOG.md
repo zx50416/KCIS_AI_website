@@ -597,3 +597,16 @@ npm run dev
 - `data/curated/`、可選 `data/processed`／`data/training`、`src/`、`scripts/`、`requirements.txt`
 - **不包含**：其他使用者規格 md、`.venv`、`node_modules`、`data/raw` 爬蟲快取
 
+---
+
+## 19. 步驟 2026-07-20：擴充工具、影片演算法、6 筆推薦
+
+### 變更
+
+1. **新增 AI 影片工具**：Runway、HeyGen、Pika、Luma Dream Machine（並強化 Vidnoz／Edpuzzle／WeVideo）
+2. **自康橋 AI 應用整理表新增**：Recraft、MyEdit、Playground AI、Copilot、Edpuzzle、WeVideo、Pixton
+3. **Kuse 難易度改為 1 星**
+4. **推薦數量 4 → 6**；結果頁大螢幕 3 欄
+5. **影片任務**：`video_boost` 專項加分；通用對話工具降權
+6. **Open Kuse 按鈕**：橘色邊框＋淺橘底，更顯眼
+

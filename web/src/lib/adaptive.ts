@@ -283,7 +283,12 @@ export function keywordChips(
       ? ["從零開始帶我做", "先給步驟再給程式", "適合學校專題", "解釋每一段在做什麼", "出錯時教我怎麼改"]
       : ["Guide me from zero", "Steps before code", "School project friendly", "Explain each part", "Help me fix errors"];
   }
-  if (task === "video" || task === "image") {
+  if (task === "video") {
+    return zh
+      ? ["短影片 15～60 秒", "需要旁白或字幕", "風格清楚好懂", "適合課堂分享", "快速出一版", "不要複雜特效"]
+      : ["Short clip 15–60 sec", "Need narration or captions", "Clear style", "OK for class", "Quick draft", "Keep effects simple"];
+  }
+  if (task === "image") {
     return zh
       ? ["風格清楚好懂", "適合課堂分享", "不要太複雜", "可以當封面／海報", "快速出一版就好"]
       : ["Clear simple style", "OK for class sharing", "Not too complex", "Works as cover/poster", "One quick draft"];
